@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin-left: 25%;
+   
+}
+#light{
+    background-color: #eeeeee;
+}
+ #light span a{
+    text-decoration: none;
+}
+aside{
+    position: relative;
+    bottom: 170px;
+}
+.opacity{
+    width: 100%;
+    background-color: #101010;
+    opacity: 0.6;
+}
+aside img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.blanc:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+.shadow{
+    padding: 10px;
+    background-color: #fff;
+}
+.petit{
+    width: 10% ;
+    height: 30px
+    ;
+    border-radius: 50%;
+}
+.grand{
+    width: 90%;
+    padding:  0 10px;
+}
+
+.triangle1{
+    width: 0;
+    height: 0;
+
+    position: relative;
+    z-index: 1;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-right: 13px solid #ddd;
+    top: 5px;
+   
+
+}
+.triangle2{
+    width: 0;
+    height: 0;
+
+    position: relative;
+    z-index: 1;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 13px solid var(--bs-primary);
+    top: 5px;
+   
+
+}
+.responsive{
+    display: none;
+}
+@media (max-width:992px){
+    aside{
+        display: none;
+        position: relative;
+        top: 0px;
+    }
+   .normal{
+    display: none;
+   }
+   .responsive{
+    display: block;
+   }
+    header , section{
+        margin: 0;
+   }
+   section{
+    width: 100%;
+   }
+   
+}
